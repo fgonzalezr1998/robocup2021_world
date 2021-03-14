@@ -126,6 +126,6 @@ POSSIBILITY OF SUCH DAMAGE.
 
   <!-- REMAPS -->
 
-  <remap from="/scan_raw" to="/scan"/>
-  <remap from="//mobile_base_controller/cmd_vel" to="/nav_vel"/>
+  <remap from="scan_raw" to="scan"/>
+  <remap from="mobile_base_controller/cmd_vel" to="nav_vel"/>
 </launch>

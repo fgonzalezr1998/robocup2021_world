@@ -54,6 +54,12 @@ We need to change the container IP address because it should take part of the sa
   lxc config device set robocup2021world eth0 ipv4.address 192.168.1.241
   ```
 
+* Also, is important to run the next command. Otherwise, ROS1 bridges will not can be launched:
+
+  ```
+  lxc config set robocup2021world security.nesting=true
+  ```
+
 * At this moment, we can start our container:
 
   ```

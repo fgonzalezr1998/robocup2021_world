@@ -123,4 +123,9 @@ POSSIBILITY OF SUCH DAMAGE.
   <node name="image_proc" pkg="image_proc" type="image_proc" ns="xtion/rgb"/>
 
   <node pkg="tiago_sim_robocup2021" type="spawn_objects" name="spawn_objects" args="--seed $(arg seed)" output="screen" />
+
+  <!-- REMAPS -->
+
+  <remap from="/scan_raw" to="/scan"/>
+  <remap from="//mobile_base_controller/cmd_vel" to="/nav_vel"/>
 </launch>
